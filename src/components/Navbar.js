@@ -16,11 +16,11 @@ const Navbar = () => {
       <div className='flex justify-between items-center'>
         <img className='hidden md:flex h-12 w-12 m-2' src={Logo} alt="" />
         <ul className='hidden md:flex items-center justify-center m-2'>
-          <li className='p-2 text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>Home</li>
-          <li className='p-2 text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>About</li>
-          <li className='p-2 text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>Services</li>
-          <li className='p-2 text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>Projects</li>
-          <li className='p-2 text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>Contact</li>
+          <li className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>Home</li>
+          <li className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>About</li>
+          <li className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>Services</li>
+          <li className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>Projects</li>
+          <li className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>Contact</li>
         </ul>
       </div>
       <div onClick={toggleHamberger} className="md:hidden hamberger flex items-center justify-between">

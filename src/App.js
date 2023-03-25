@@ -9,7 +9,9 @@ import About from './components/About';
 function App() {
   return (
     <div className='overflow-x-hidden'>
-      <Navbar/>
+      <div className='fixed top-0 w-full'>
+        <Navbar/>
+      </div>
       <Hero/>
       <About/>
       <Services/>
