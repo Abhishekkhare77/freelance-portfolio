@@ -4,9 +4,9 @@ import React from 'react'
 import Pc from './Pc'
 const ScifiLaptop = () => {
   return (
-    <div className="h-[100vh] w-[50%]">
-      <Canvas>
-        <OrbitControls scale={0.5} autoRotate={true}/>
+    <div className="md:h-[100vh] md:w-[50%] h-[50vh] w-[100%]">
+      <Canvas camera={{ position: [5, 2, -5], fov: 100 }}>
+        <OrbitControls autoRotate={true}/>
         <ambientLight intensity={2}/>
         <Pc/>
       </Canvas>

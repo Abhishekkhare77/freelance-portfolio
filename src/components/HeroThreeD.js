@@ -7,7 +7,7 @@ const HeroThreeD = () => {
     <div className='md:h-[100vh] h-[70vh] w-[90%] md:w-1/2 -z-10'>
       <Canvas>
         <OrbitControls enableZoom={false} autoRotate='true'/>
-        <ambientLight intensity={1}/>
+        <ambientLight intensity={0.5}/>
         <directionalLight position={[3,2,1]}/>
         <mesh>
           <boxGeometry args={[2.5,2.5,2.5]}/>
