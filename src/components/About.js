@@ -4,7 +4,7 @@ import ScifiLaptop from './ScifiLaptop'
 const About = () => {
     return (
         <div className='mt-10'>
-            <h1 className='mt-5 text-center md:text-6xl text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>About</h1>
+            <h1 className='mt-5 text-center md:text-6xl text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hoverable'>About</h1>
             <section className="text-gray-600 body-font overflow-hidden">
                 <div className="container px-5 py-12 mx-auto">
                     <div className="lg:w-4/5 mx-auto flex flex-wrap">

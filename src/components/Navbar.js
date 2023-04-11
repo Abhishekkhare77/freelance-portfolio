@@ -19,13 +19,13 @@ const Navbar = () => {
     <>
       <nav className='bg-black fixed top-0 w-full'>
         <div className='flex justify-between items-center'>
-          <img className='hidden md:flex h-12 w-12 m-2' src={Logo} alt="" />
+          <img className='hidden md:flex h-12 w-12 m-2' src={Logo} alt="" /> 
           <ul className='hidden md:flex items-center justify-center m-2'>
-            <li  className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>Home</li>
-            <li  className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>About</li>
-            <li   className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>Services</li>
-            <li   className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>Projects</li>
-            <li   className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out'>Contact</li>
+            <li  className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable'>Home</li>
+            <li  className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable'>About</li>
+            <li   className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable'>Skills</li>
+            <li   className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable'>Projects</li>
+            <li   className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable'>Contact</li>
           </ul>
         </div>
         <div onClick={toggleHamberger} className="md:hidden hamberger flex items-center justify-between">
@@ -42,7 +42,7 @@ const Navbar = () => {
           <ul className='flex flex-col items-center text-xl my-2'>
             <li className='py-2'>Home</li>
             <li className='py-2'>About</li>
-            <li className='py-2'>Services</li>
+            <li className='py-2'>Skills</li>
             <li className='py-2'>Projects</li>
             <li className='py-2'>Contact</li>
           </ul>
