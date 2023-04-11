@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {  useState } from 'react'
 import Logo from '../assets/logo.png'
 import Hero from '../components/Hero'
 import About from '../components/About'
@@ -21,11 +21,22 @@ const Navbar = () => {
   const projectRef = useRef(null);
   const contactRef = useRef(null);
   const homeRef = useRef(null);
+
+  const [active, setActive] = useState('');
+
   const scrollToRef = (ref) =>{ 
     window.scrollTo(0, ref.current.offsetTop)
+    let currentOffset = window.scrollY;
+    if(currentOffset === ref.current.offsetTop){
+      setActive('')
+    }else{
+      setActive('')
+    }
     // console.log(ref.current.offsetTop) 
   } 
-  const executeScrollhome = () => scrollToRef(homeRef)
+  const executeScrollhome = () => {
+    scrollToRef(homeRef)
+  }
   const executeScrollabout = () => scrollToRef(aboutRef)
   const executeScrollskills = () => scrollToRef(skillsRef)
   const executeScrollproject = () => scrollToRef(projectRef)
@@ -37,11 +48,11 @@ const Navbar = () => {
         <div className='flex justify-between items-center'>
           <img className='hidden md:flex h-12 w-12 m-2' src={Logo} alt="" /> 
           <ul className='hidden md:flex items-center justify-center m-2'>
-            <li onClick={executeScrollhome} className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable'>Home</li>
-            <li onClick={executeScrollabout} className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable'>About</li>
-            <li onClick={executeScrollskills}  className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable'>Skills</li>
-            <li onClick={executeScrollproject}  className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable'>Projects</li>
-            <li onClick={executeScrollcontact}  className='p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable'>Contact</li>
+            <li onClick={executeScrollhome} className={`p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable ${active}`}>Home</li>
+            <li onClick={executeScrollabout} className={`p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable ${active}`}>About</li>
+            <li onClick={executeScrollskills}  className={`p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable ${active}`}>Skills</li>
+            <li onClick={executeScrollproject}  className={`p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable ${active}`}>Projects</li>
+            <li onClick={executeScrollcontact}  className={`p-2 cursor-pointer text-xl font-semibold hover:text-purple-400 transition-all ease-in-out hoverable ${active}`}>Contact</li>
           </ul>
         </div>
         <div onClick={toggleHamberger} className="md:hidden hamberger flex items-center justify-between">

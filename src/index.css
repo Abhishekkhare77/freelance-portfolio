@@ -12,7 +12,7 @@ body{
     color: white;
 }
 body::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
   }
   
   body::-webkit-scrollbar-track {
